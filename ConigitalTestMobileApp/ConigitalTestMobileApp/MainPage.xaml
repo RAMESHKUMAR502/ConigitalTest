@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ConigitalTestMobileApp"
+             x:Class="ConigitalTestMobileApp.MainPage">
+
+    <Grid Padding="10" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Entry Placeholder="Please Enter Number" Text="{Binding Inputnumber}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Row="0" 
+                PlaceholderColor="Gray" TextColor="Black">
+
+        </Entry>
+
+        <Button HorizontalOptions="CenterAndExpand" Command="{Binding SubmitCommand}" Grid.Row="1" VerticalOptions="CenterAndExpand" WidthRequest="100" Text="Submit" TextColor="Black"></Button>
+
+        <Label TextColor="Black" Text="{Binding Results}" Grid.Row="2"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+        </Label>
+    </Grid>
+
+</ContentPage>
